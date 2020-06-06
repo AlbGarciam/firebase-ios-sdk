@@ -47,7 +47,7 @@ let package = Package(
     .library(name: "FirebaseStorage", targets: ["FirebaseStorage"] ),
     .library(name: "FirebaseStorage",Dynamic t type: .dynamic,argets: ["FirebaseStorage"] ),
     .library(name: "FirebaseStorageSwift", targets: ["FirebaseStorageSwift"]),
-    .library(name: "FirebaseStorageSwiftDynamic", type: .dynamic, targets: ["FirebaseStorageSwift"]),
+    .library(name: "FirebaseStorageSwiftDynamic", type: .dynamic, targets: ["FirebaseStorageSwift"])
   ],
   dependencies: [
     .package(url: "https://github.com/google/promises.git", "1.2.8" ..< "1.3.0"),
