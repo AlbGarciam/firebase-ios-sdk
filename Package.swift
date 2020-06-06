@@ -27,18 +27,12 @@ let package = Package(
     // Swift target.
     .executable(name: "firebase-test", targets: ["firebase-test"]),
     //
-    .library(
-      name: "Firebase",
-      targets: ["Firebase"]
-    ),
-    .library(
-      name: "FirebaseCore",
-      targets: ["FirebaseCore"]
-    ),
-    .library(
-      name: "FirebaseAuth",
-      targets: ["FirebaseAuth"]
-    ),
+    .library(name: "Firebase", targets: ["Firebase"] ),
+    .library(name: "FirebaseDynamic", type: .dynamic, targets: ["Firebase"]),
+    .library(name: "FirebaseCore", targets: ["FirebaseCore"] ),
+    .library(name: "FirebaseCoreDynamic", type: .dynamic, targets: ["FirebaseCore"]),
+    .library(name: "FirebaseAuth", targets: ["FirebaseAuth"]),
+    .library(name: "FirebaseAuthDynamic", type: .dynamic, targets: ["FirebaseAuth"]),
     // .library(
     //   name: "FirebaseCrashlytics",
     //   targets: ["FirebaseCrashlytics"]
@@ -46,22 +40,14 @@ let package = Package(
     // .library(
     //   name: "FirebaseFunctions",
     //   targets: ["FirebaseFunctions"]),
-    .library(
-      name: "FirebaseInstallations",
-      targets: ["FirebaseInstallations"]
-    ),
-    .library(
-      name: "FirebaseInstanceID",
-      targets: ["FirebaseInstanceID"]
-    ),
-    .library(
-      name: "FirebaseStorage",
-      targets: ["FirebaseStorage"]
-    ),
-    .library(
-      name: "FirebaseStorageSwift",
-      targets: ["FirebaseStorageSwift"]
-    ),
+    .library(name: "FirebaseInstallations", targets: ["FirebaseInstallations"]),
+    .library(name: "FirebaseInstallationsDynamic", type: .dynamic, targets: ["FirebaseInstallations"]),
+    .library(name: "FirebaseInstanceID", targets: ["FirebaseInstanceID"]),
+    .library(name: "FirebaseInstanceIDDynamic", type: .dynamic, targets: ["FirebaseInstanceID"]),
+    .library(name: "FirebaseStorage", targets: ["FirebaseStorage"] ),
+    .library(name: "FirebaseStorage",Dynamic t type: .dynamic,argets: ["FirebaseStorage"] ),
+    .library(name: "FirebaseStorageSwift", targets: ["FirebaseStorageSwift"]),
+    .library(name: "FirebaseStorageSwiftDynamic", type: .dynamic, targets: ["FirebaseStorageSwift"]),
   ],
   dependencies: [
     .package(url: "https://github.com/google/promises.git", "1.2.8" ..< "1.3.0"),
