@@ -45,7 +45,7 @@ let package = Package(
     .library(name: "FirebaseInstanceID", targets: ["FirebaseInstanceID"]),
     .library(name: "FirebaseInstanceIDDynamic", type: .dynamic, targets: ["FirebaseInstanceID"]),
     .library(name: "FirebaseStorage", targets: ["FirebaseStorage"] ),
-    .library(name: "FirebaseStorageDynamic", type: .dynamic,argets: ["FirebaseStorage"] ),
+    .library(name: "FirebaseStorageDynamic", type: .dynamic, targets: ["FirebaseStorage"] ),
     .library(name: "FirebaseStorageSwift", targets: ["FirebaseStorageSwift"]),
     .library(name: "FirebaseStorageSwiftDynamic", type: .dynamic, targets: ["FirebaseStorageSwift"])
   ],
